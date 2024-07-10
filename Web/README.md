@@ -23,7 +23,7 @@
   </tr>
   <tr>
     <td style="border: 1px solid white; padding: 8px;">Kowalski</td>
-    <td style="border: 1px solid white; padding: 8px;">Pokeman?</td>
+    <td style="border: 1px solid white; padding: 8px;">Risky Card Executions</td>
     <td style="border: 1px solid white; padding: 8px;">File Upload to RCE</td>
   </tr>
   <tr>
@@ -33,7 +33,7 @@
   </tr>
   <tr>
     <td style="border: 1px solid white; padding: 8px;">Kowalski</td>
-    <td style="border: 1px solid white; padding: 8px;">Torture</td>
+    <td style="border: 1px solid white; padding: 8px;">A Trick or Torture</td>
     <td style="border: 1px solid white; padding: 8px;">Spits each letter of the flag out every 15minutes </td>
   </tr>
   <tr>

@@ -18,7 +18,7 @@ app.get('/search',(req,res)=>{
  
 app.post('/search', (req, res) => {
     const place = req.body.place;
-    var list=['ls', 'cat' ,'js','ejs','css','json'];
+    var list=['ls', 'cat' ,'js','ejs','css','json','head','rm','rf'];
     function check(place,list){
         for (let i=0;i<list.length;i++){
             if (place.includes(list[i])){

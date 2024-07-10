@@ -1,19 +1,11 @@
 Simple Challenge
 
+There are multiple methods to obtain the flag:
 
+    Simply execute /flagdisplay().
 
-There are multiple methods to get the flag
+    Increase maxstep and utilize the maxstep variable to retrieve X-coordinates and Y-coordinates from local storage. Navigate to the specified coordinates and execute the Dig() function.
 
+    Fetch the flag by accessing /flageee.
 
-
-1) just do /flagdisplay()
-
-
-2) increase maxstep with the help of maxstep variable get X-coords and Y-coords from localstorage and things and then go to that given coords and do Dig() function
-
-
-3) just fetch do /flageee
-
-
-
-There are 2 more but then same things basically ;)
+There are two additional methods that follow similar principles.
