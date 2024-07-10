@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload and View Pokémon Image</title>
+    <style>
+        body {
+            background: url(ok/map.jpg);
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+            height: 100vh;
+            padding: 20px;
+        }
+        
+        #xhrImageContainer {
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            margin-bottom: 20px;
+        }
+        
+        .form-box {
+            background-color: rgba(255, 255, 255, 0.4);
+            border: none;
+            border-radius: 8px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        
+        .form-box.left {
+            margin-right: auto; 
+        }
+        
+        .form-box.right {
+            margin-left: auto; 
+        }
+        
+        
+        
+        form {
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            margin-top: 0;
+        }
+
+        #result {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 2); /* Black background with some transparency */
+            padding: 1px; /* Add padding to give some space around the image */
+        }
+        
+        #result img {
+            display: block;
+            margin: 0 auto; /* Center the image horizontally */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box left">
+            <h2>Upload Pokémon Image</h2>
+            <form id="uploadForm" method="post" action="upload.php" enctype="multipart/form-data">
+                <label for="pokemonImage">Pokémon Image:</label>
+                <input type="file" id="pokemonImage" name="pokemonImage" accept="image/*">
+                <br>
+                <label for="pokemonName">Pokémon Name:</label>
+                <input type="text" id="pokemonName" name="pokemonName" placeholder="Enter Pokémon Name" pattern="[a-zA-Z0-9]+" title="Please enter alphanumeric characters only">
+                <br>
+                <input type="submit" name="Submit" value="Upload Pokémon">
+                <input type="reset">
+            </form>
+        </div>
+        <div id="xhrImageContainer">
+            <div id="result"></div> 
+        </div>
+
+        <div class="form-box right">
+            <h2>View Pokémon</h2>
+            <form id="viewForm">
+                <label for="viewPokemonName">Pokémon Name:</label>
+                <input type="text" id="viewPokemonName" name="pokemonName" placeholder="Enter Pokémon Name" pattern="[a-zA-Z0-9]+" title="Please enter alphanumeric characters only">
+                <br>
+                <label for="pokemonAttack">Favorite Attack:</label>
+                <input type="text" id="favoriteAttack" name="pokemonAttack" placeholder="Favorite Attack">
+                <br>
+                <label for="pokemonStrength">Strength:</label>
+                <input type="text" id="strength" name="pokemonStrength" placeholder="Strength">
+                <br>
+                <label for="pokemonWeakness">Weakness:</label>
+                <input type="text" id="weakness" name="pokemonWeakness" placeholder="Weakness">
+                <br>
+                <label for="pokemonType">Type</label>
+                <select name="pokemonType">
+                    <option value="fire">Fire</option>
+                    <option value="water">Water</option>
+                    <option value="grass">Grass</option>
+                    <option value="dark">Dark</option>
+                </select>
+                <br>
+                <input type="submit" name="View" value="View Pokémon">
+            </form>
+        </div>
+    </div>
+    <script>
+        document.getElementById("viewForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var formData = new FormData(this);
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "generate.php?" + new URLSearchParams(formData).toString(), true);
+            xhr.responseType = 'blob'; 
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == XMLHttpRequest.DONE) {
+                    if (xhr.status == 200) {
+                        var reader = new FileReader();
+                        reader.onload = function() {
+                            var img = document.createElement('img');
+                            img.src = reader.result;
+                            document.getElementById("result").innerHTML = '';
+                            document.getElementById("result").appendChild(img);
+                        };
+                        reader.readAsDataURL(xhr.response);
+                    } else {
+                        console.error("Request failed: " + xhr.status);
+                    }
+                }
+            };
+            xhr.send();
+        });
+    </script>
+    
+</body>
+</html>

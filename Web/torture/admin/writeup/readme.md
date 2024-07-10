@@ -1,0 +1,1 @@
+ALL it is supposed to do is send the Letters of the Flag after approx 15mins which will make it so it can be iterated through atleast 3 times in 24 hours.If you realise that its changing you could just put a script reading the file at all times or something along those lines

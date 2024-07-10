@@ -1,0 +1,30 @@
+<%- include('partials/header'); -%>
+
+<main id="pokefy">
+    <h2>Pokéfy</h2>
+    <h3 class="count">Collected: <%= count %></h3>
+    <div class="card-container">
+        <div class="card" id="pokemonCard">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="/images/default.png" alt="pokemon card">
+                </div>
+                <div class="card-back">
+                    <img src="#" alt="pokemon">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="name">
+        <img src="/images/pokeball.png" class="pokeball" alt="pokeball" hidden>
+        <h3>
+            Reveal?
+        </h3>
+    </div>
+    <div class="buttons">
+        <button id="reveal" class="btn">Reveal</button>
+        <button id="submit" class="btn" disabled>Select</button>
+    </div>
+</main>
+
+<%- include('partials/footer'); -%>

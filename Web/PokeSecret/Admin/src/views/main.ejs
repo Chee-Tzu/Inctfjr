@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nav.css">
+    <link href='https://fonts.googleapis.com/css?family=Bubblegum Sans' rel='stylesheet'>
+
+                
+    <style>
+        
+        @font-face {
+  font-family: "monument_extendedregular";
+  src: url("https://www.yudiz.com/codepen/photography-banner/monumentextended-regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Extenda Trial 20 Micro";
+  src: url("https://www.yudiz.com/codepen/photography-banner/Extenda-20Micro.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Extenda Trial 30 Deca";
+  src: url("https://www.yudiz.com/codepen/photography-banner/Extenda-30Deca.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #4a1827ed;
+    background-repeat: no-repeat;
+}
+
+.main{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center; 
+}
+
+#Welcome {
+    color: #000000a7;
+    font-size: 25px;
+    position: fixed;
+    top: 600px;
+    left: 100px;
+
+}
+
+#name {
+    position: fixed;
+    top: 530px;
+    left: 750px;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-family: "Extenda Trial 30 Deca";
+    font-size: 300px;
+    line-height: 0.75;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: uppercase;
+}
+#fearow {
+    position: absolute; 
+    left: -500px; 
+
+    animation: slideIn 2s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        left: -500px; 
+        top: -500px; 
+    }
+    to {
+        top: 10%;
+        left: 650px; 
+    }
+}
+#pokemon {
+    position: absolute;
+    top: 100px;
+    left: 740px;
+    transform: scale(0);
+    animation: zoomInOut 4s forwards;
+}
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+.top{
+    background-color: rgba(61, 59, 59, 0.768);
+    height: 600px;
+    z-index: -1;
+}
+.top img{
+    padding: 10px;
+}
+.top h1{
+    display: inline-block;
+    position: relative;
+    bottom: 6%;
+    color: #fff;
+}
+#button{
+    position: absolute;
+  background-color: #8B742E;
+  border: none;
+  color: white;
+  position: fixed;
+    top: 800px;
+    left:870px;
+  padding: 15px 32px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+#secret{
+    float: right;
+  background-color: #dc1010a6;
+  border: none;
+  color: white;
+  /* position: fixed;
+    top: 40px;
+    left: 1000px; */
+  padding: 15px 35px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 4px 2px;
+  margin-right: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+        </style>
+
+<script>
+    function cha() {
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+                window.location.href = '/';
+            } else {
+                console.log("Error");
+            }
+        }
+    };
+    xhr.open('GET', '/change');
+    xhr.send();
+}
+function secret(){
+    window.location.href='/secret';
+}
+</script>
+</head>
+<body>
+    <div class="top">
+        <img src="Poké_Ball_icon.svg.png" width="80px" height="auto">
+        <h1>PokeSecret</h1>
+        <button id="secret" onclick="secret()">Secret</button>
+    </div>
+    <div class="main">
+        <% if (pokemon==='fearow') { %>
+        <h1 id="name">Fearow!</h1>
+        <img src="Fearow.png" width="500px" id="fearow">
+        <% } %>
+        <% if (pokemon === 'snorlax') { %>
+            <h1 id="name">Snorlax</h1>
+            <img src="Snorlax.png" width="500px" id="pokemon">
+        <% } %>
+        <% if (pokemon === 'vulpix') { %>
+            <h1 id="name">Vulpix!</h1>
+            <img src="Vulpix.png" width="500px" id="pokemon">
+        <% } %>
+        <% if (pokemon === 'squirtle') { %>
+            <h1 id="name">Squirtle!</h1>
+            <img src="Squirtle.png" width="500px" id="pokemon">
+        <% } %>
+        <% if (pokemon === 'scizor') { %>
+            <h1 id="name">Scizor!</h1>
+            <img src="Scizor.png" width="500px" id="pokemon">
+        <% } %>
+        
+        <% if (pokemon === 'pikachu') { %>
+            <h1 id="name">Pikachu!</h1>
+            <img src="Pikachu.png" width="500px" id="pokemon">
+        <% } %>
+        <button id="button" onclick="cha()">Change Pokemon</button>
+        </div>
+
+</body>
+</html>
