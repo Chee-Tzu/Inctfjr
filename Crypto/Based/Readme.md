@@ -9,7 +9,7 @@ Yet, it seems that their efforts were abruptly cut short...
 You discover Ciphertexts that seem to be written in a different number system than the one you are familiar with, can you decrypt the message?
 
 **Challenge File**:
-+ [Primary Link](./Handout/based.zip)
++ [Primary Link](./handout/chall.zip)
 + [Mirror Link](https://drive.google.com/file/d/1Zw8P5eYkUYzHkqR30uK3A0LXQFfoa-Og/view?usp=drive_link)
 
 **be7960cbce689c7d494ad2ae96017e18**: 
