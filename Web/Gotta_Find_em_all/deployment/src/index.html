@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Injected flag content from server-side
+        const flagContent = "<%= flagContent %>";
+    </script>
+    
+    <script src="js/index.js"></script>
+    <style>        
+        .dialogue-box {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 10px;
+            border: 1px solid black;
+        }
+        .player {
+            width: 80px;
+            height: 100px;
+            background-image: url("down.png"); 
+            background-size: 240px 100px; 
+            background-position: -90px 0; 
+            position: fixed;
+            z-index: 999;
+        }
+        .player.active {
+            animation: walk 0.2s linear infinite;
+        }
+        @keyframes walk {
+            0%, 32% {
+                background-position: 0 0; 
+            }
+            33%, 65% {
+                background-position: -90px 0; 
+            }
+            66%, 100% {
+                background-position: -160px 0; 
+            }
+        }
+        body{
+            background: url('./assets/rand/real.png') ;
+            z-index: -1;
+        }
+        .coordinates-display {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: fit-content;
+            height: fit-content;
+            border: 5px solid black;
+            border-radius: 20px;
+            background-color: white; 
+            text-align: center; 
+            line-height: 50px; 
+            font-size: 14px; 
+        }
+        
+    </style>
+</head>
+<body>
+    <!--IT'S SIMPLE REALLY ALL YOU NEED TO DO IS FIND THE CORRECT COORDINATE AND USE THE TM028 GEN 1 (google it) FUNCTION -->
+
+
+
+<div id="steps-counter"></div>
+<!-- However all the best getting past the Step Condition ;) Check for the Step-Counter Variable -->
+</body>
+</html>
+

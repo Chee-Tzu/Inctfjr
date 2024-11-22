@@ -1,0 +1,23 @@
+<%- include('partials/header'); -%>
+
+<main>
+    <h2>View</h2>
+    <% if (imageObjects.length === 0) { %>
+        <p>No images to display</p>
+    <% } else { %>
+        <div class="pokefied-list">
+            <% imageObjects.forEach(image => { %>
+                <div class="pokefied-item">
+                    <img src="<%= image.base64Data %>" alt="<%= image.name %>">
+                    <p><%= image.name %></p>
+                    <form action="/download" method="post">
+                        <button name="name" value="<%= image.name %>" class="download btn" type="submit">Download</button>
+                    </form>
+                </div>
+            <% }); %>
+        </div>
+    <% } %>
+</main>
+
+
+<%- include('partials/footer'); -%>

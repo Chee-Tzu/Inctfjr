@@ -39,11 +39,11 @@
   <tr>
     <td style="border: 1px solid white; padding: 8px;">Rohit</td>
     <td style="border: 1px solid white; padding: 8px;">PokeSecret</td>
-    <td style="border: 1px solid white; padding: 8px;">Command injection</td>
+    <td style="border: 1px solid white; padding: 8px;">Cookie Tampering to get flag</td>
   </tr>
   <tr>
     <td style="border: 1px solid white; padding: 8px;">Rohit</td>
     <td style="border: 1px solid white; padding: 8px;">PokeQuest</td>
-    <td style="border: 1px solid white; padding: 8px;">Cookie Tampering to get flag</td>
+    <td style="border: 1px solid white; padding: 8px;">Command injection</td>
   </tr>
 </table>
