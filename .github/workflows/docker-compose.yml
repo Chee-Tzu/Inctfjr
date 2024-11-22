@@ -38,7 +38,7 @@ jobs:
               echo "building and pushing: $CATEGORY/$IMAGE_NAME/deployment/"
               docker build $CATEGORY/$IMAGE_NAME/deployment/ --tag $IMAGE_NAME
               built_images+=("$IMAGE_NAME")
-              IMAGE_ID=ghcr.io/Chee-Tzu/$IMAGE_NAME
+              IMAGE_ID=ghcr.io/chee-tzu/$IMAGE_NAME
               echo "pushing to $IMAGE_ID"
               VERSION=latest
               docker tag $IMAGE_NAME $IMAGE_ID:$VERSION
