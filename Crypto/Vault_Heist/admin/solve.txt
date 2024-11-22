@@ -1,0 +1,17 @@
+Message 1
+https://www.dcode.fr/base-64-encoding -> Bob, I've got eyes on the data vault. It's all locked up tight, but I've found a weakness in their system. We need to get past their firewall first. Then we'll need the key.
+
+Message 2
+https://www.dcode.fr/ascii-code -> Ah, the key. I figured. Any idea where it's hidden, or are we doing this the hard way ? 
+
+Message 3
+https://www.dcode.fr/morse-code -> I'VE GOT A CONTACT WHO OWES ME A FAVOR. HE'S HIDING IT IN PLAIN SIGHT, ENCRYPTED IN THEIR SECURITY FEEDS. THE PHRASE IS 'SILENT AS THE SKY' IF WE DECODE IT, WE GET ACCESS.
+
+Message 4
+https://www.dcode.fr/vigenere-cipher with key "silent as the sky" -> 'silent as the key' huh? that's a stjunge one.but if il qorks, we're in.whsn's next once we hspe the key ?
+
+Message 5
+int to bytes with big endian -> Once we have the key, the real fun begins. We'll have to move fast. But don't worry-I've got the flag: inctfj{4s_qu13t_4s_th3_c4lm_b3f0r3_th3_st0rm} to cover our tracks if things get loud.
+
+Message 6
+https://www.dcode.fr/shift-cipher -> Good. We won't get a second chance.You decode that key, and I'll make sure our exit's clear.Let's get the data and disappear.
