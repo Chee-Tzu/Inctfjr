@@ -1,6 +1,6 @@
 # Woogie-Woogie
 
-### Diff
+### Difficulty
 medium
 
 ### Challenge Description

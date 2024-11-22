@@ -1,6 +1,6 @@
 # Buggy_Calc
 
-### Diff
+### Difficulty
 hard
 
 ### Challenge Description

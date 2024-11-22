@@ -1,6 +1,6 @@
 # Choc Shop
 
-### Diff
+### Difficulty
 medium
 
 ### Challenge Description

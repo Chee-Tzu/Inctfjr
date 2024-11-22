@@ -1,6 +1,6 @@
 # Batcomputer Breach
 
-### Diff
+### Difficulty
 easy
 
 ### Challenge Description

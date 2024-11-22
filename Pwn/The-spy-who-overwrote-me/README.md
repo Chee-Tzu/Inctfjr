@@ -1,6 +1,6 @@
 # The spy who overwrote me
 
-### Diff
+### Difficulty
 beginner 
 
 ### Challenge Description

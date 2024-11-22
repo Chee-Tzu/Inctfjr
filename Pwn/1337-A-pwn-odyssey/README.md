@@ -1,6 +1,6 @@
 # 1337: A pwn odyssey
 
-### Diff
+### Difficulty
 easy
 
 ### Challenge Description

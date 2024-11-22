@@ -1,6 +1,6 @@
 # Secretive Word Game
 
-### Diff
+### Difficulty
 hard - backup
 
 ### Challenge Description

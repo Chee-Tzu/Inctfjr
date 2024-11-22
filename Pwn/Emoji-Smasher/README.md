@@ -1,6 +1,6 @@
 # Emoji Smasher
 
-### Diff
+### Difficulty
 beginner 
 
 ### Challenge Description

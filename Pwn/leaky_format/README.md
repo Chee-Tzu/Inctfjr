@@ -1,6 +1,6 @@
 # Leaky Format
 
-### Diff
+### Difficulty
 beginner
 
 ### Challenge Description
