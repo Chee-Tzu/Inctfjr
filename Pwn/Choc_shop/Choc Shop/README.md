@@ -1,5 +1,8 @@
 # Choc Shop
 
+### Diff
+medium
+
 ### Challenge Description
 
 Welcome to my chocolate store. Can you find out what my favourite type of chocolate is?

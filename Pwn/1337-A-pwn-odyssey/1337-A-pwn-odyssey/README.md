@@ -1,5 +1,8 @@
 # 1337: A pwn odyssey
 
+### Diff
+easy
+
 ### Challenge Description
 
 "Dave" is not allowed access to the mothership by the AI, HAL 9000. HAL learns that Dave is going to shut him down. The AI has changed the password for Dave's access to the central core, which is the only way to shut down the AI. Your job is to gain access to HAL's "central core" and shut him down once and for all.

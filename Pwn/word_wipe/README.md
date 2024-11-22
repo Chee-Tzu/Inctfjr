@@ -1,5 +1,8 @@
 # Secretive Word Game
 
+### Diff
+hard - backup
+
 ### Challenge Description
 
 I've dived headfirst into this word game, but the instructions are about as clear as a whispered secret in a hurricane!  Can you lend a hand and unravel this cryptic puzzle with me?

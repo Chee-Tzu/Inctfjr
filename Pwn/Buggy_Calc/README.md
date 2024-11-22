@@ -1,5 +1,8 @@
 # Buggy_Calc
 
+### Diff
+hard
+
 ### Challenge Description
 
 This is our new and improved calculator, We introduced some new things such as variables. But in this version you cannot use them directly as it is still in development, so it's just like a notepad for numbers. We are offering you a sample early trial for our service.

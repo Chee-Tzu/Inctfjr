@@ -1,6 +1,7 @@
-# Challenge Name
+# Leaky Format
 
-Leaky Format
+### Diff
+beginner
 
 ### Challenge Description
 

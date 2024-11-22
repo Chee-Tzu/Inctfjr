@@ -1,5 +1,8 @@
 # Batcomputer Breach
 
+### Diff
+easy
+
 ### Challenge Description
 
 Bane has breached the Batcave's defenses and locked Batman out of the Batcomputer. Batman has leaked some useful data for you. Help him regain access to the Batcomputer while he goes after Bane.  

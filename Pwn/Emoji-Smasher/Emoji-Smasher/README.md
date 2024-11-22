@@ -1,5 +1,8 @@
 # Emoji Smasher
 
+### Diff
+beginner 
+
 ### Challenge Description
 
 We made an emoji smasher. Can you smash it?
